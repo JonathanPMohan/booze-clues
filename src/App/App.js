@@ -11,6 +11,7 @@ import Home from '../components/pages/Home/Home';
 import Clues from '../components/pages/Clues/Clues';
 import NewClue from '../components/pages/NewClue/NewClue';
 import EditClue from '../components/pages/EditClue/EditClue';
+import MyNavBar from '../components/MyNavBar/MyNavBar';
 import authRequests from '../helpers/data/authRequests';
 import './App.scss';
 
@@ -71,13 +72,13 @@ class App extends React.Component {
       <div className="App">
         <BrowserRouter>
           <React.Fragment>
-            {/* <MyNavBar isAuthed={authed} logoutClickEvent={logoutClickEvent} /> */}
+            <MyNavBar isAuthed={authed} logoutClickEvent={logoutClickEvent} />
             <div className='container'>
               <div className='row'>
                 <Switch>
                   <PrivateRoute path='/' exact component={Home} authed={this.state.authed} />
                   <PrivateRoute path='/home' component={Home} authed={this.state.authed} />
-                  <PrivateRoute path='/clues' component={Clues} authed={this.state.authed} />
+                  <PrivateRoute exact path='/clues' component={Clues} authed={this.state.authed} />
                   <PrivateRoute path='/clues/new' component={NewClue} authed={this.state.authed} />
                   <PrivateRoute path='/clues/:id/edit' component={EditClue} authed={this.state.authed} />
                   <PublicRoute path='/auth' component={Auth} authed={this.state.authed} />

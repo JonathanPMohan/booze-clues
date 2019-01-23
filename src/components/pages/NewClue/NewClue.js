@@ -82,7 +82,7 @@ class NewClue extends React.Component {
                 placeholder="Clue Image"
                 aria-describedby="imageHelp"
                 value={newClue.imageUrl}
-                onChange={this.imageUrlChange}
+                onChange={this.imageChange}
               />
             </div>
             <div className="input-group mb-3">

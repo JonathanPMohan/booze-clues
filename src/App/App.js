@@ -57,16 +57,20 @@ class App extends React.Component {
     this.removeListener();
   }
 
-  isAuthenticated = () => {
-    this.setState({ authed: true });
-  }
-
   render() {
-    const { authed } = this.state;
+    const {
+      authed,
+      pendingUser,
+    } = this.state;
+
     const logoutClickEvent = () => {
       authRequests.logoutUser();
       this.setState({ authed: false });
     };
+
+    if (pendingUser) {
+      return null;
+    }
 
     return (
       <div className="App">

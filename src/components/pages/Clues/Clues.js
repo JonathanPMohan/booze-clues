@@ -26,18 +26,31 @@ class Clues extends React.Component {
     this.getClues();
   }
 
+  deleteSingleClue = (clueId) => {
+    cluesData.deleteClue(clueId)
+      .then(() => {
+        this.getClues();
+      });
+  }
+
+
+  newClueView = () => {
+    this.props.history.push('/clues/new');
+  }
+
   render() {
     const printClue = this.state.clues.map(clue => (
       <PrintClueCard
         key={clue.id}
         clue={clue}
+        deleteSingleClue={this.deleteSingleClue}
       />
     ));
     return (
       <div className='clues mx-auto'>
         <h2>Searching For A Clue?</h2>
         <div className="row justify-content-center">{printClue}</div>
-        <Button className="btn btn-info mt-5" id="editClue">Edit Clue</Button>
+        <Button className="btn btn-info mt-5" id="addClue" onClick={this.newClueView}>Add Clue</Button>
       </div>
     );
   }

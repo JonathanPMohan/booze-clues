@@ -21,4 +21,6 @@ const getAllClues = uid => new Promise((resolve, reject) => {
     });
 });
 
-export default { getAllClues };
+const deleteClue = clueId => axios.delete(`${firebaseUrl}/clues/${clueId}.json`);
+
+export default { getAllClues, deleteClue };

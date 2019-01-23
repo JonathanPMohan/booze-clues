@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from 'reactstrap';
-import PropTypes from 'prop-types';
 import authRequests from '../../../helpers/data/authRequests';
+import cluesData from '../../../helpers/data/cluesData';
 import './NewClue.scss';
 
 const defaultClue = {
@@ -14,10 +14,6 @@ const defaultClue = {
 };
 
 class NewClue extends React.Component {
-  static propTypes = {
-    onSubmit: PropTypes.func,
-  }
-
   state = {
     newClue: defaultClue,
   }
@@ -41,11 +37,17 @@ class NewClue extends React.Component {
 
   formSubmit = (e) => {
     e.preventDefault();
-    const { onSubmit } = this.props;
     const myClue = { ...this.state.newClue };
     myClue.uid = authRequests.getCurrentUid();
-    onSubmit(myClue);
+    this.addClue(myClue);
     this.setState({ newClue: defaultClue });
+  }
+
+  addClue = (newClue) => {
+    cluesData.createClue(newClue)
+      .then(() => {
+        this.props.history.push('/clues');
+      });
   }
 
   render() {

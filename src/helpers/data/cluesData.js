@@ -4,7 +4,7 @@ import apiKeys from '../apiKeys';
 const firebaseUrl = apiKeys.firebaseConfig.databaseUrl;
 
 const getAllClues = uid => new Promise((resolve, reject) => {
-  axios.get(`${firebaseUrl}/cules.json?orderBy="uid"&equalTo=${uid}"`)
+  axios.get(`${firebaseUrl}/clues.json?orderBy="uid"&equalTo="${uid}"`)
     .then((results) => {
       const cluesObject = results.data;
       const cluesArray = [];

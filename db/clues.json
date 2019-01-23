@@ -1,0 +1,124 @@
+{
+  "clues": {
+    "clue1": {
+      "name": "Belle Meade",
+      "imageUrl": "https://static1.squarespace.com/static/538bca96e4b02daa496e2e61/t/577e7f128419c243feb4dca1/1467907868829/Nashville%27s+Belle+Meade+Bourbon?format=300w",
+      "location": "Bobs Chop Shop",
+      "style": "Bourbon",
+      "notes": "LOCAL, Maple Nose, Caramel, Vanilla, Smooth Finish.",
+      "uid": "pkbFn03ieFNSBPRIB7OItIa3MMH3"
+    },
+    "clue2": {
+      "name": "Corsair",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGiileFbmJ98E5Bfe6rTTVeQO8Sh8j05k0gD652MiybC4KsTpShw",
+      "location": "Flying Saucer",
+      "style": "Gin",
+      "notes": "LOCAL, citrus, smooth, straight or cocktails",
+      "uid": "pkbFn03ieFNSBPRIB7OItIa3MMH3"
+    },
+    "clue3": {
+      "name": "TC Craft Extra Anejo",
+      "imageUrl": "https://pbs.twimg.com/media/Dm6tqpZX4AAkquR.jpg",
+      "location": "WMWLM Tasting",
+      "style": "Tequila",
+      "notes": "LOCAL, 9 YR, Smooth, Warm, light Agave, Vanilla",
+      "uid": "pkbFn03ieFNSBPRIB7OItIa3MMH3"
+    },
+    "clue4": {
+      "name": "Rittenhouse",
+      "imageUrl": "https://www.anconaswine.com/images/sites/anconaswine/labels/rittenhouse-rye-100-bonded-rittenhouse-rye-100-bonded_1.jpg",
+      "location": "Fun Time Bar & Grill",
+      "style": "Rye Whiskey",
+      "notes": "100 Proof, Toffe, Dried Fruits, Cinnamon, Vanilla, Spice",
+      "uid": "pkbFn03ieFNSBPRIB7OItIa3MMH3"
+    },
+    "clue5": {
+      "name": "The Diplomat Proper Sake",
+      "imageUrl": "https://i0.wp.com/siliconbayounews.com/wp-content/uploads/2017/11/Proper-Sake.png?fit=658%2C657",
+      "location": "12 South Taproom",
+      "style": "Sake",
+      "notes": "LOCAL, Vanilla, Coconut, Apple Cider, Light Sugar",
+      "uid": "pkbFn03ieFNSBPRIB7OItIa3MMH3"
+    },
+    "clue6": {
+      "name": "Del Maguey Pechuga",
+      "imageUrl": "https://www.saveur.com/sites/saveur.com/files/styles/1000_1x_/public/mezcal-vida_2000x1500.jpg?itok=PWkj4Jnn&fc=50,50",
+      "location": "Mexico Vacation",
+      "style": "Mezcal",
+      "notes": "Basil, Lemon, Ocean, Fruit, Smoky",
+      "uid": "1234"
+    },
+    "clue7": {
+      "name": "Chateau Smith",
+      "imageUrl": "http://www.gusclemensonwine.com/wp-content/uploads/2018/09/Chateau-Smith-Cabernet-Sauvignon-2015.jpg",
+      "location": "Smith & Son Meat & 3",
+      "style": "Cabernet Sauvignon",
+      "notes": "Red Fruits, Cherry, Spice, Long Finish",
+      "uid": "pkbFn03ieFNSBPRIB7OItIa3MMH3"
+    },
+    "clue8": {
+      "name": "Diplomatico Reserva",
+      "imageUrl": "http://domaineselect.com/wp-content/uploads/2015/10/diplomatico-reserva-exclusiva.jpg",
+      "location": "Rum Forrest Rum",
+      "style": "Rum",
+      "notes": "Maple Syrup, Orange Peel, Brown Sugar, Toffee Finish",
+      "uid": "pkbFn03ieFNSBPRIB7OItIa3MMH3"
+    },
+    "clue9": {
+      "name": "Talisker 10",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0098/6782/products/talisker_10_new_grande.jpg?v=1546994589",
+      "location": "Hops & Scotch",
+      "style": "Scotch",
+      "notes": "10 YR, Sweet/Smokey, Pear, Cracked Pepper Finish",
+      "uid": "1234"
+    },
+    "clue10": {
+      "name": "Wathen's Barrel Select",
+      "imageUrl": "https://i.pinimg.com/originals/7f/12/df/7f12dfd3e9d6b5be559e17f5d4dc2c12.jpg",
+      "location": "Bourbon Barrel Joes",
+      "style": "Bourbon",
+      "notes": "Smooth, Caramel, Vanilla, Spice, 94 Proof",
+      "uid": "pkbFn03ieFNSBPRIB7OItIa3MMH3"
+    },
+    "clue11": {
+      "name": "Crystal Head",
+      "imageUrl": "https://www.31dover.com/media/catalog/product/c/r/crystal_head_vodka_12_1.png",
+      "location": "Jimmy's Halloween Party",
+      "style": "Vodka",
+      "notes": "Smooth, 6X Distilled, Skull Bottle, Cool",
+      "uid": "pkbFn03ieFNSBPRIB7OItIa3MMH3"
+    },
+    "clue12": {
+      "name": "Louisa's Liqueur",
+      "imageUrl": "https://static1.squarespace.com/static/538bca96e4b02daa496e2e61/5ad76763575d1f9af1a7f662/5ad768b32b6a288cd1080671/1524149272216/2018-04-11+Nelson%27s+-+Louisa%27s+Liqueur-5064.jpg",
+      "location": "Nelson's Green Brier Distillery",
+      "style": "Coffee Caramel Pecan",
+      "notes": "LOCAL, Robust Caramel, Coffee, Pecan, Not Too Sweet",
+      "uid": "pkbFn03ieFNSBPRIB7OItIa3MMH3"
+    },
+    "clue13": {
+      "name": "Blood Oath",
+      "imageUrl": "http://thewhiskeywash.com/wp-content/uploads/2018/03/bloodoath-pact4.jpg",
+      "location": "Martin's BBQ",
+      "style": "Bourbon",
+      "notes": "Caramel, Spice, Vanilla, Smooth",
+      "uid": "1234"
+    },
+    "clue14": {
+      "name": "Buffalo Trace Experimental Collection",
+      "imageUrl": "http://1.bp.blogspot.com/-WUam7rQTYio/Uhkklwr7ZaI/AAAAAAAAA04/AiWGgSw3xbk/s1600/P1000815.jpg",
+      "location": "Bourbon Bash 2018",
+      "style": "Bourbon",
+      "notes": "Bold, Smooth, Caramel, Cinnamon, Vanilla",
+      "uid": "pkbFn03ieFNSBPRIB7OItIa3MMH3"
+    },
+    "clue15": {
+      "name": "Pickers Classic",
+      "imageUrl": "https://static1.squarespace.com/static/54ff95bae4b0d0db327c391d/t/5b7ec319032be4c7d3a42d49/1535034151994/2018-08-07+Pickers+Vodka-1443.jpg?format=2500w",
+      "location": "Vodka On The River 2018",
+      "style": "Vodka",
+      "notes": "5X Distilled, Smooth, Clean, Shots or Mixing",
+      "uid": "pkbFn03ieFNSBPRIB7OItIa3MMH3"
+    }
+  }
+}

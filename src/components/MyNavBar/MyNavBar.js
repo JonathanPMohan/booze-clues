@@ -35,14 +35,19 @@ class MyNavbar extends React.Component {
         return (
           <Nav className='ml-auto' navbar>
             <NavItem>
-              <NavLink tag={RRNavLink} to='/clues'>CLUES
+              <NavLink tag={RRNavLink} to='/clues'>
+                <i class="fas fa-glass-whiskey fa-3x"></i>
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink tag={RRNavLink} to='/clues/new'>NEW CLUE</NavLink>
+              <NavLink tag={RRNavLink} to='/clues/new'>
+                <i class="fas fa-search-plus fa-3x"></i>
+              </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink onClick={logoutClickEvent}><i className="fas fa-sign-out-alt fa-3x"></i></NavLink>
+              <NavLink onClick={logoutClickEvent}>
+                <i className="fas fa-sign-out-alt fa-3x"></i>
+              </NavLink>
             </NavItem>
           </Nav>
         );

@@ -56,8 +56,8 @@ class Clues extends React.Component {
     return (
       <div className='clues mx-auto'>
         <h2>Searching For A Clue?</h2>
-        <div className="row justify-content-center">{printClue}</div>
         <Button className="btn btn-info mt-5" id="addClue" onClick={this.newClueView}>Add Clue</Button>
+        <div className="row justify-content-center">{printClue}</div>
       </div>
     );
   }

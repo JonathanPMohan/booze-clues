@@ -21,11 +21,26 @@ const getAllClues = uid => new Promise((resolve, reject) => {
     });
 });
 
+const getSingleClue = clueId => new Promise((resolve, reject) => {
+  axios.get(`${firebaseUrl}/clues/${clueId}.json`)
+    .then((result) => {
+      const singleClue = result.data;
+      singleClue.id = clueId;
+      resolve(singleClue);
+    })
+    .catch((error) => {
+      reject(error);
+    });
+});
+
 const deleteClue = clueId => axios.delete(`${firebaseUrl}/clues/${clueId}.json`);
 const createClue = clueObject => axios.post(`${firebaseUrl}/clues.json`, JSON.stringify(clueObject));
+const updateClue = (clueObject, clueId) => axios.put(`${firebaseUrl}/clues/${clueId}.json`, JSON.stringify(clueObject));
 
 export default {
   getAllClues,
   deleteClue,
   createClue,
+  updateClue,
+  getSingleClue,
 };

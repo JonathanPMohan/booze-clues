@@ -38,14 +38,21 @@ class Clues extends React.Component {
     this.props.history.push('/clues/new');
   }
 
+  passClueToEdit = (clueId) => {
+    this.setState({ editId: clueId });
+    this.props.history.push(`/clues/${clueId}/edit`);
+  }
+
   render() {
     const printClue = this.state.clues.map(clue => (
       <PrintClueCard
         key={clue.id}
         clue={clue}
         deleteSingleClue={this.deleteSingleClue}
+        passClueToEdit={this.passClueToEdit}
       />
     ));
+
     return (
       <div className='clues mx-auto'>
         <h2>Searching For A Clue?</h2>

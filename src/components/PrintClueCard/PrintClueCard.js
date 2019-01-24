@@ -11,6 +11,12 @@ class PrintClueCard extends React.Component {
     deleteSingleClue: PropTypes.func,
   }
 
+  editEvent = (e) => {
+    e.preventDefault();
+    const { passClueToEdit, clue } = this.props;
+    passClueToEdit(clue.id);
+  }
+
   deleteEvent = (e) => {
     e.preventDefault();
     const { deleteSingleClue, clue } = this.props;
@@ -26,7 +32,7 @@ class PrintClueCard extends React.Component {
         return (
           <div>
             <span className="col">
-              <button className="btn btn-secondary">
+              <button className="btn btn-secondary" onClick={this.editEvent}>
                 <i className="fas fa-pencil-alt"></i>
               </button>
             </span>

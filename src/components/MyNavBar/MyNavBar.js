@@ -36,17 +36,17 @@ class MyNavbar extends React.Component {
           <Nav className='ml-auto' navbar>
             <NavItem>
               <NavLink tag={RRNavLink} to='/clues'>
-                <i class="fas fa-glass-whiskey fa-3x"></i>
+                <i className="fas fa-glass-whiskey fa-3x"></i>
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink tag={RRNavLink} to='/clues/new'>
-                <i class="fas fa-search-plus fa-3x"></i>
+                <i className="fas fa-search-plus fa-3x"></i>
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink tag={RRNavLink} to='/locations'>
-                <i class="fas fa-globe-americas fa-3x"></i>
+                <i className="fas fa-globe-americas fa-3x"></i>
               </NavLink>
             </NavItem>
             <NavItem>

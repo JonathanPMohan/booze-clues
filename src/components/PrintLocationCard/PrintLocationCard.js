@@ -9,12 +9,19 @@ class PrintLocationCard extends React.Component {
   static propTypes = {
     location: locationShape.locationShape,
     deleteSingleLocation: PropTypes.func,
+    passLocationToEdit: PropTypes.func,
   }
 
   deleteEvent = (e) => {
     e.preventDefault();
     const { deleteSingleLocation, location } = this.props;
     deleteSingleLocation(location.id);
+  }
+
+  editEvent = (e) => {
+    e.preventDefault();
+    const { passLocationToEdit, location } = this.props;
+    passLocationToEdit(location.Id);
   }
 
   render() {
@@ -26,7 +33,7 @@ class PrintLocationCard extends React.Component {
         return (
           <div>
             <span className="col-1">
-              <button className="btn btn-secondary">
+              <button className="btn btn-secondary" onClick={this.editEvent}>
                 <i className="fas fa-pencil-alt"></i>
               </button>
             </span>

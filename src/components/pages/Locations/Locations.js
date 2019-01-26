@@ -33,6 +33,11 @@ class Locations extends React.Component {
       });
   }
 
+  passLocationToEdit = (locationId) => {
+    this.setState({ editId: locationId });
+    this.props.history.push(`/locations/${locationId}/edit`);
+  }
+
   newLocationView = () => {
     this.props.history.push('/locations/new');
   }
@@ -43,6 +48,7 @@ class Locations extends React.Component {
         key={location.id}
         location={location}
         deleteSingleLocation={this.deleteSingleLocation}
+        passLocationToEdit={this.passLocationToEdit}
       />
     ));
 

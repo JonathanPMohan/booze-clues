@@ -11,6 +11,9 @@ import Home from '../components/pages/Home/Home';
 import Clues from '../components/pages/Clues/Clues';
 import NewClue from '../components/pages/NewClue/NewClue';
 import EditClue from '../components/pages/EditClue/EditClue';
+import Locations from '../components/pages/Locations/Locations';
+import NewLocation from '../components/pages/NewLocation/NewLocation';
+import EditLocation from '../components/pages/EditLocation/EditLocation';
 import MyNavBar from '../components/MyNavBar/MyNavBar';
 import authRequests from '../helpers/data/authRequests';
 import './App.scss';
@@ -85,6 +88,9 @@ class App extends React.Component {
                   <PrivateRoute exact path='/clues' component={Clues} authed={this.state.authed} />
                   <PrivateRoute path='/clues/new' component={NewClue} authed={this.state.authed} />
                   <PrivateRoute path='/clues/:id/edit' component={EditClue} authed={this.state.authed} />
+                  <PrivateRoute exact path='/locations' component={Locations} authed={this.state.authed} />
+                  <PrivateRoute path='/locations/new' component={NewLocation} authed={this.state.authed} />
+                  <PrivateRoute path='/locations/:id/edit' component={EditLocation} authed={this.state.authed} />
                   <PublicRoute path='/auth' component={Auth} authed={this.state.authed} />
                 </Switch>
               </div>

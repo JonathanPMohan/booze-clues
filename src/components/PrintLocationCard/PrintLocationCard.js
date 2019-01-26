@@ -47,7 +47,7 @@ class PrintLocationCard extends React.Component {
           <img className="card-img-top" src={location.imageUrl} alt={location.name} />
           <p className="card-text">{location.address}</p>
           <p className="card-text">{location.phoneNumber}</p>
-          <a href="card-text">{location.website}</a>
+          <a href={location.website} target="_blank nonopener noreferrer" >Visit Website</a>
           {makeButtons()}
         </div>
       </div>

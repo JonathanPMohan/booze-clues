@@ -21,6 +21,9 @@ const getAllLocations = uid => new Promise((resolve, reject) => {
     });
 });
 
+const deleteLocation = locationId => axios.delete(`${firebaseUrl}/locations/${locationId}.json`);
+
 export default {
   getAllLocations,
+  deleteLocation,
 };

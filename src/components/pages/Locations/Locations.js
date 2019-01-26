@@ -26,6 +26,13 @@ class Locations extends React.Component {
     this.getLocations();
   }
 
+  deleteSingleLocation = (locationId) => {
+    locationsData.deleteLocation(locationId)
+      .then(() => {
+        this.getLocations();
+      });
+  }
+
   newLocationView = () => {
     this.props.history.push('/locations/new');
   }
@@ -35,6 +42,7 @@ class Locations extends React.Component {
       <PrintLocationCard
         key={location.id}
         location={location}
+        deleteSingleLocation={this.deleteSingleLocation}
       />
     ));
 

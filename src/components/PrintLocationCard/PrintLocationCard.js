@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import locationShape from '../../helpers/propz/locationShape';
 import authRequests from '../../helpers/data/authRequests';
 
@@ -7,6 +8,13 @@ import './PrintLocationCard.scss';
 class PrintLocationCard extends React.Component {
   static propTypes = {
     location: locationShape.locationShape,
+    deleteSingleLocation: PropTypes.func,
+  }
+
+  deleteEvent = (e) => {
+    e.preventDefault();
+    const { deleteSingleLocation, location } = this.props;
+    deleteSingleLocation(location.id);
   }
 
   render() {
@@ -17,13 +25,13 @@ class PrintLocationCard extends React.Component {
       if (location.uid === uid) {
         return (
           <div>
-            <span className="col">
+            <span className="col-1">
               <button className="btn btn-secondary">
                 <i className="fas fa-pencil-alt"></i>
               </button>
             </span>
-            <span className="col">
-              <button className="btn btn-secondary">
+            <span className="col-1">
+              <button className="btn btn-secondary" onClick={this.deleteEvent}>
                 <i className="fas fa-trash-alt"></i>
               </button>
             </span>
@@ -39,7 +47,7 @@ class PrintLocationCard extends React.Component {
           <img className="card-img-top" src={location.imageUrl} alt={location.name} />
           <p className="card-text">{location.address}</p>
           <p className="card-text">{location.phoneNumber}</p>
-          <p className="card-text">{location.website}</p>
+          <a href="card-text">{location.website}</a>
           {makeButtons()}
         </div>
       </div>

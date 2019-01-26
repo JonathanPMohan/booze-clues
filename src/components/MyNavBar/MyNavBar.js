@@ -45,6 +45,11 @@ class MyNavbar extends React.Component {
               </NavLink>
             </NavItem>
             <NavItem>
+              <NavLink tag={RRNavLink} to='/locations'>
+                <i class="fas fa-globe-americas fa-3x"></i>
+              </NavLink>
+            </NavItem>
+            <NavItem>
               <NavLink onClick={logoutClickEvent}>
                 <i className="fas fa-sign-out-alt fa-3x"></i>
               </NavLink>

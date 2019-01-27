@@ -51,10 +51,10 @@ class EditLocation extends React.Component {
 
   formSubmit = (e) => {
     e.preventDefault();
-    const myLocation = { ...this.state.newLocation };
+    const myLocation = { ...this.state.locationEdit };
     myLocation.uid = authRequests.getCurrentUid();
-    this.addLocation(myLocation);
-    this.setState({ newLocation: defaultLocation });
+    this.addLocationEdit(myLocation);
+    this.setState({ locationEdit: defaultLocation });
   }
 
   componentDidMount() {

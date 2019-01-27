@@ -9,7 +9,6 @@ class PrintLocationCard extends React.Component {
   static propTypes = {
     location: locationShape.locationShape,
     deleteSingleLocation: PropTypes.func,
-    passLocationToEdit: PropTypes.func,
   }
 
   deleteEvent = (e) => {
@@ -21,7 +20,7 @@ class PrintLocationCard extends React.Component {
   editEvent = (e) => {
     e.preventDefault();
     const { passLocationToEdit, location } = this.props;
-    passLocationToEdit(location.Id);
+    passLocationToEdit(location.id);
   }
 
   render() {

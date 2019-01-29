@@ -11,6 +11,7 @@ import {
   NavLink,
 } from 'reactstrap';
 import './MyNavBar.scss';
+import boozeSmall from './images/booze_small.png';
 
 class MyNavbar extends React.Component {
   static propTypes = {
@@ -63,7 +64,7 @@ class MyNavbar extends React.Component {
     return (
       <div className="my-navbar">
         <Navbar color="dark" dark expand="md">
-          <NavbarBrand href="/">Booze Clues</NavbarBrand>
+          <NavbarBrand href="/"><img src={boozeSmall} alt="small_logo" /></NavbarBrand>
           <NavbarToggler onClick={e => this.toggle(e)} />
           <Collapse isOpen={this.state.isOpen} navbar>
             {buildNavbar()}

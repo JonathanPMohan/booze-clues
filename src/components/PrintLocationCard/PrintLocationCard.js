@@ -47,13 +47,13 @@ class PrintLocationCard extends React.Component {
       return <span className="col-2"></span>;
     };
     return (
-      <div className="card col-3 mt-3 mr-1">
-        <h3 className="card-header">{location.name}</h3>
+      <div className="card2 col-3 mt-3 mr-1">
+        <h2 className="card-header">{location.name}</h2>
         <div className="card-body">
           <img className="card-img-top" src={location.imageUrl} alt={location.name} />
-          <p className="card-text">{location.address}</p>
-          <p className="card-text">{location.phoneNumber}</p>
-          <a href={location.website} target="_blank nonopener noreferrer" >Visit Website</a>
+          <h4 className="card-text">{location.address}</h4>
+          <h5 className="card-text">{location.phoneNumber}</h5>
+          <h5><a href={location.website} target="_blank nonopener noreferrer" >Visit Website</a></h5>
           {makeButtons()}
         </div>
       </div>

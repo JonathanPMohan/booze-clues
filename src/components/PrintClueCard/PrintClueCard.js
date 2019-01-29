@@ -47,13 +47,13 @@ class PrintClueCard extends React.Component {
       return <span className="col-2"></span>;
     };
     return (
-      <div className="card col-3 mt-3 mr-1">
-        <h3 className="card-header">{clue.name}</h3>
+      <div className="card2 col-3 mt-3 mr-1">
+        <h2 className="card-header">{clue.name}</h2>
         <div className="card-body">
           <img className="card-img-top" src={clue.imageUrl} alt={clue.name} />
-          <p className="card-text">{clue.location}</p>
-          <p className="card-text">{clue.style}</p>
-          <p className="card-text">{clue.notes}</p>
+          <h3 className="card-text">{clue.location}</h3>
+          <h4 className="card-text">{clue.style}</h4>
+          <h5 className="card-text">{clue.notes}</h5>
           {makeButtons()}
         </div>
       </div>

@@ -16,11 +16,11 @@ class Auth extends React.Component {
   render() {
     return (
       <div id="authBtn">
+        <img src={boozeLogo} alt="booze clues logo" />
         <div className='Auth'>
           <button className='loginBtn' onClick={this.authenticateUser}>
             <img src={googleButton} alt="google login" />
           </button>
-          <img src={boozeLogo} alt="booze clues logo" />
         </div>
       </div>
     );

@@ -3,6 +3,7 @@ import { Button } from 'reactstrap';
 import authRequests from '../../../helpers/data/authRequests';
 import locationsData from '../../../helpers/data/locationsData';
 import './NewLocation.scss';
+import clueBkg from './images/edit_bkg.jpg';
 
 const defaultLocation = {
   name: '',
@@ -54,83 +55,86 @@ class NewLocation extends React.Component {
     const { newLocation } = this.state;
 
     return (
-      <div className='newClue mx-auto'>
-        <div className="clue-form mt-5">
-          <form onSubmit={this.formSubmit}>
-            <div className="input-group mb-3">
-              <div className="input-group-prepend">
-                <span className="input-group-text" id="name-pre">Name</span>
+      <div className='newLocationPage mx-auto'>
+        <div className='newClue mx-auto'>
+          <div className="clue-form mt-5">
+            <form onSubmit={this.formSubmit}>
+              <div className="input-group mb-3">
+                <div className="input-group-prepend">
+                  <span className="input-group-text" id="name-pre">Name</span>
+                </div>
+                <input
+                  type="text"
+                  id="name"
+                  className="form-control"
+                  placeholder="Location Name"
+                  aria-describedby="nameHelp"
+                  value={newLocation.name}
+                  onChange={this.nameChange}
+                />
               </div>
-              <input
-                type="text"
-                id="name"
-                className="form-control"
-                placeholder="Location Name"
-                aria-describedby="nameHelp"
-                value={newLocation.name}
-                onChange={this.nameChange}
-              />
-            </div>
-            <div className="input-group mb-3">
-              <div className="input-group-prepend">
-                <span className="input-group-text" id="imageUrl-pre">Image URL</span>
+              <div className="input-group mb-3">
+                <div className="input-group-prepend">
+                  <span className="input-group-text" id="imageUrl-pre">Image URL</span>
+                </div>
+                <input
+                  type="text"
+                  id="imageUrl"
+                  className="form-control"
+                  placeholder="Location Image"
+                  aria-describedby="imageHelp"
+                  value={newLocation.imageUrl}
+                  onChange={this.imageChange}
+                />
               </div>
-              <input
-                type="text"
-                id="imageUrl"
-                className="form-control"
-                placeholder="Location Image"
-                aria-describedby="imageHelp"
-                value={newLocation.imageUrl}
-                onChange={this.imageChange}
-              />
-            </div>
-            <div className="input-group mb-3">
-              <div className="input-group-prepend">
-                <span className="input-group-text" id="address-pre">Address</span>
+              <div className="input-group mb-3">
+                <div className="input-group-prepend">
+                  <span className="input-group-text" id="address-pre">Address</span>
+                </div>
+                <input
+                  type="text"
+                  id="address"
+                  className="form-control"
+                  placeholder="Location Address"
+                  aria-describedby="locationHelp"
+                  value={newLocation.address}
+                  onChange={this.addressChange}
+                />
               </div>
-              <input
-                type="text"
-                id="address"
-                className="form-control"
-                placeholder="Location Address"
-                aria-describedby="locationHelp"
-                value={newLocation.address}
-                onChange={this.addressChange}
-              />
-            </div>
-            <div className="input-group mb-3">
-              <div className="input-group-prepend">
-                <span className="input-group-text" id="phone-pre">Phone #</span>
+              <div className="input-group mb-3">
+                <div className="input-group-prepend">
+                  <span className="input-group-text" id="phone-pre">Phone #</span>
+                </div>
+                <input
+                  type="text"
+                  id="phoneNumber"
+                  className="form-control"
+                  placeholder="Location Phone Number"
+                  aria-describedby="styleHelp"
+                  value={newLocation.phoneNumber}
+                  onChange={this.phoneNumberChange}
+                />
               </div>
-              <input
-                type="text"
-                id="phoneNumber"
-                className="form-control"
-                placeholder="Location Phone Number"
-                aria-describedby="styleHelp"
-                value={newLocation.phoneNumber}
-                onChange={this.phoneNumberChange}
-              />
-            </div>
-            <div className="input-group mb-3">
-              <div className="input-group-prepend">
-                <span className="input-group-text" id="website-pre">Website</span>
+              <div className="input-group mb-3">
+                <div className="input-group-prepend">
+                  <span className="input-group-text" id="website-pre">Website</span>
+                </div>
+                <input
+                  type="text"
+                  id="website"
+                  className="form-control"
+                  placeholder="Location Website"
+                  aria-describedby="notesHelp"
+                  value={newLocation.website}
+                  onChange={this.websiteChange}
+                />
               </div>
-              <input
-                type="text"
-                id="website"
-                className="form-control"
-                placeholder="Location Website"
-                aria-describedby="notesHelp"
-                value={newLocation.website}
-                onChange={this.websiteChange}
-              />
-            </div>
-            <Button className="btn btn-secondary mt-3" onSubmit={this.formSubmit}>
-              Submit New Location
+              <Button className="btn btn-secondary mt-3" onSubmit={this.formSubmit}>
+                Submit New Location
             </Button>
-          </form>
+              <img src={clueBkg} alt="rocks glasses" />
+            </form>
+          </div>
         </div>
       </div>
     );

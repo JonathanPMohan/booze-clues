@@ -47,7 +47,7 @@ class PrintLocationCard extends React.Component {
       return <span className="col-2"></span>;
     };
     return (
-      <div className="card2 col-3 mt-3 mr-1">
+      <div className="card3 col-3 mt-3 mr-1">
         <h2 className="card-header">{location.name}</h2>
         <div className="card-body">
           <img className="card-img-top" src={location.imageUrl} alt={location.name} />

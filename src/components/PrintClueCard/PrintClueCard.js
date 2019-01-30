@@ -23,6 +23,11 @@ class PrintClueCard extends React.Component {
     deleteSingleClue(clue.id);
   }
 
+  clueClick = () => {
+    const { clue, onSelect } = this.props;
+    onSelect(clue.id);
+  }
+
   render() {
     const { clue } = this.props;
     const uid = authRequests.getCurrentUid();
@@ -47,7 +52,7 @@ class PrintClueCard extends React.Component {
       return <span className="col-2"></span>;
     };
     return (
-      <div className="card2 col-3">
+      <div className="card2 col-3" onClick={this.clueClick}>
         <h3 className="card-header">{clue.name}</h3>
         <div className="card-body">
           <img className="card-img-top" src={clue.imageUrl} alt={clue.name} />

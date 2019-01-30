@@ -41,6 +41,10 @@ class Clues extends React.Component {
     this.props.history.push('/clues/new');
   }
 
+  onSelect = (clueId) => {
+    this.props.history.push(`/clues/${clueId}`);
+  }
+
   passClueToEdit = (clueId) => {
     this.setState({ editId: clueId });
     this.props.history.push(`/clues/${clueId}/edit`);
@@ -75,6 +79,7 @@ class Clues extends React.Component {
         clue={clue}
         deleteSingleClue={this.deleteSingleClue}
         passClueToEdit={this.passClueToEdit}
+        onSelect={this.onSelect}
       />
     ));
 

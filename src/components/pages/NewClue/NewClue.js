@@ -3,6 +3,7 @@ import { Button } from 'reactstrap';
 import authRequests from '../../../helpers/data/authRequests';
 import cluesData from '../../../helpers/data/cluesData';
 import './NewClue.scss';
+import clueBkg from './images/edit_bkg.jpg';
 
 const defaultClue = {
   name: '',
@@ -54,83 +55,86 @@ class NewClue extends React.Component {
     const { newClue } = this.state;
 
     return (
-      <div className='newClue mx-auto'>
-        <div className="clue-form mt-5">
-          <form onSubmit={this.formSubmit}>
-            <div className="input-group mb-3">
-              <div className="input-group-prepend">
-                <span className="input-group-text" id="name-pre">Name</span>
+      <div className='newCluePage mx-auto'>
+        <div className='newClue mx-auto'>
+          <div className="clue-form mt-5">
+            <form onSubmit={this.formSubmit}>
+              <div className="input-group mb-3">
+                <div className="input-group-prepend">
+                  <span className="input-group-text" id="name-pre">Name</span>
+                </div>
+                <input
+                  type="text"
+                  id="name"
+                  className="form-control"
+                  placeholder="Clue Name"
+                  aria-describedby="nameHelp"
+                  value={newClue.name}
+                  onChange={this.nameChange}
+                />
               </div>
-              <input
-                type="text"
-                id="name"
-                className="form-control"
-                placeholder="Clue Name"
-                aria-describedby="nameHelp"
-                value={newClue.name}
-                onChange={this.nameChange}
-              />
-            </div>
-            <div className="input-group mb-3">
-              <div className="input-group-prepend">
-                <span className="input-group-text" id="imageUrl-pre">Image URL</span>
+              <div className="input-group mb-3">
+                <div className="input-group-prepend">
+                  <span className="input-group-text" id="imageUrl-pre">Image URL</span>
+                </div>
+                <input
+                  type="text"
+                  id="imageUrl"
+                  className="form-control"
+                  placeholder="Clue Image"
+                  aria-describedby="imageHelp"
+                  value={newClue.imageUrl}
+                  onChange={this.imageChange}
+                />
               </div>
-              <input
-                type="text"
-                id="imageUrl"
-                className="form-control"
-                placeholder="Clue Image"
-                aria-describedby="imageHelp"
-                value={newClue.imageUrl}
-                onChange={this.imageChange}
-              />
-            </div>
-            <div className="input-group mb-3">
-              <div className="input-group-prepend">
-                <span className="input-group-text" id="location-pre">Location</span>
+              <div className="input-group mb-3">
+                <div className="input-group-prepend">
+                  <span className="input-group-text" id="location-pre">Location</span>
+                </div>
+                <input
+                  type="text"
+                  id="location"
+                  className="form-control"
+                  placeholder="Clue Location"
+                  aria-describedby="locationHelp"
+                  value={newClue.location}
+                  onChange={this.locationChange}
+                />
               </div>
-              <input
-                type="text"
-                id="location"
-                className="form-control"
-                placeholder="Clue Location"
-                aria-describedby="locationHelp"
-                value={newClue.location}
-                onChange={this.locationChange}
-              />
-            </div>
-            <div className="input-group mb-3">
-              <div className="input-group-prepend">
-                <span className="input-group-text" id="style-pre">Style</span>
+              <div className="input-group mb-3">
+                <div className="input-group-prepend">
+                  <span className="input-group-text" id="style-pre">Style</span>
+                </div>
+                <input
+                  type="text"
+                  id="style"
+                  className="form-control"
+                  placeholder="Clue Style"
+                  aria-describedby="styleHelp"
+                  value={newClue.style}
+                  onChange={this.styleChange}
+                />
               </div>
-              <input
-                type="text"
-                id="style"
-                className="form-control"
-                placeholder="Clue Style"
-                aria-describedby="styleHelp"
-                value={newClue.style}
-                onChange={this.styleChange}
-              />
-            </div>
-            <div className="input-group mb-3">
-              <div className="input-group-prepend">
-                <span className="input-group-text" id="notes-pre">Notes</span>
+              <div className="input-group mb-3">
+                <div className="input-group-prepend">
+                  <span className="input-group-text" id="notes-pre">Notes</span>
+                </div>
+                <input
+                  type="text"
+                  id="notes"
+                  className="form-control"
+                  placeholder="Clue Notes"
+                  aria-describedby="notesHelp"
+                  value={newClue.notes}
+                  onChange={this.notesChange}
+                />
               </div>
-              <input
-                type="text"
-                id="notes"
-                className="form-control"
-                placeholder="Clue Notes"
-                aria-describedby="notesHelp"
-                value={newClue.notes}
-                onChange={this.notesChange}
-              />
-            </div>
-            <Button className="btn btn-secondary mt-3" onSubmit={this.formSubmit}>
-              Submit New Clue
+              <Button className="btn btn-secondary mt-3" onSubmit={this.formSubmit}>
+                Submit New Clue
             </Button>
-          </form>
+              <img src={clueBkg} alt="rocks glasses" />
+            </form>
+          </div>
         </div>
       </div>
     );

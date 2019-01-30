@@ -17,6 +17,11 @@ class PrintLocationCard extends React.Component {
     deleteSingleLocation(location.id);
   }
 
+  locationClick = () => {
+    const { location, onSelect } = this.props;
+    onSelect(location.id);
+  }
+
   editEvent = (e) => {
     e.preventDefault();
     const { passLocationToEdit, location } = this.props;
@@ -47,7 +52,7 @@ class PrintLocationCard extends React.Component {
       return <span className="col-2"></span>;
     };
     return (
-      <div className="card3 col-3 mt-3 mr-1">
+      <div className="card3 col-3 mt-3 mr-1" onClick={this.locationClick}>
         <h2 className="card-header">{location.name}</h2>
         <div className="card-body">
           <img className="card-img-top" src={location.imageUrl} alt={location.name} />

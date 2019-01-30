@@ -11,7 +11,8 @@ import Home from '../components/pages/Home/Home';
 import Clues from '../components/pages/Clues/Clues';
 import NewClue from '../components/pages/NewClue/NewClue';
 import EditClue from '../components/pages/EditClue/EditClue';
-import ClueDetail from '../components/pages/ClueDetail/ClueDetail';
+import ClueDetail from '../components/ClueDetail/ClueDetail';
+import LocationDetail from '../components/LocationDetail/LocationDetail';
 import Locations from '../components/pages/Locations/Locations';
 import NewLocation from '../components/pages/NewLocation/NewLocation';
 import EditLocation from '../components/pages/EditLocation/EditLocation';
@@ -92,6 +93,7 @@ class App extends React.Component {
                   <PrivateRoute path='/clues/:id/edit' component={EditClue} authed={this.state.authed} />
                   <PrivateRoute exact path='/locations' component={Locations} authed={this.state.authed} />
                   <PrivateRoute path='/locations/new' component={NewLocation} authed={this.state.authed} />
+                  <PrivateRoute path='/locations/:id/' component={LocationDetail} authed={this.state.authed} />
                   <PrivateRoute path='/locations/:id/edit' component={EditLocation} authed={this.state.authed} />
                   <PublicRoute path='/auth' component={Auth} authed={this.state.authed} />
                 </Switch>

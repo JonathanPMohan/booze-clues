@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from 'reactstrap';
-import cluesData from '../../../helpers/data/cluesData';
+import cluesData from '../../helpers/data/cluesData';
 import './ClueDetail.scss';
 
 class ClueDetail extends React.Component {

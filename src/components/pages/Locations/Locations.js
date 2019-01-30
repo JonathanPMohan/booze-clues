@@ -62,6 +62,10 @@ class Locations extends React.Component {
     this.props.history.push('/locations/new');
   }
 
+  onSelect = (locationId) => {
+    this.props.history.push(`/locations/${locationId}`);
+  }
+
   render() {
     const { filteredLocations } = this.state;
 
@@ -71,6 +75,7 @@ class Locations extends React.Component {
         location={location}
         deleteSingleLocation={this.deleteSingleLocation}
         passLocationToEdit={this.passLocationToEdit}
+        onSelect={this.onSelect}
       />
     ));
 

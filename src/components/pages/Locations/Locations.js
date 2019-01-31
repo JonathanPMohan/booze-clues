@@ -86,7 +86,7 @@ class Locations extends React.Component {
           placeholder="Search Locations By Name or Address"
           onChange={this.onChange}
           searchText=""
-          classNames="test-class w-100"
+          classNames="locSearch"
         />
         <Button className="btn btn-secondary mt-5" id="addLocation" onClick={this.newLocationView}>ADD LOCATION</Button>
         <div className="row justify-content-center">{printLocation}</div>

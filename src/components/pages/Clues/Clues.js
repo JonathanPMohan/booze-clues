@@ -92,7 +92,7 @@ class Clues extends React.Component {
           searchText=""
           classNames="test-class w-100"
         />
-        <Button className="btn btn-info mt-5" id="addClue" onClick={this.newClueView}>Add Clue</Button>
+        <Button className="btn btn-secondary mt-5" id="addClue" onClick={this.newClueView}>ADD CLUE</Button>
         <div className="row justify-content-center">{printClue}</div>
       </div>
     );

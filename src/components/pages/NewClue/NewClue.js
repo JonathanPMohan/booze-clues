@@ -130,7 +130,7 @@ class NewClue extends React.Component {
                 />
               </div>
               <Button className="btn btn-secondary mt-3" onSubmit={this.formSubmit}>
-                Submit New Clue
+                SUBMIT NEW CLUE
             </Button>
               <img src={clueBkg} alt="rocks glasses" />
             </form>

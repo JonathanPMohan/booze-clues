@@ -27,14 +27,14 @@ class ClueDetail extends React.Component {
 
     return (
       <div className="clueDetail mx-auto">
-        <Button className="btn btn-success mt-5" id="backToClues" onClick={this.backToCluesView}>Back To Clues</Button>
-        <div className="card col-6 mt-3 mx-auto">
-          <h5 className="card-header">{singleClue.name}</h5>
+        <div className="col-9 mt-3 mx-auto">
+          <h1 className="card-header">{singleClue.name}</h1>
           <div className="card-body">
             <img className="card-img-top" src={singleClue.imageUrl} alt={singleClue.name} />
-            <p className="card-text">{singleClue.location}</p>
-            <p className="card-text">{singleClue.style}</p>
-            <p className="card-text">{singleClue.notes}</p>
+            <h3 className="card-text">{singleClue.location}</h3>
+            <h3 className="card-text">{singleClue.style}</h3>
+            <h4 className="card-text">{singleClue.notes}</h4>
+            <Button className="btn btn-light mt-5" id="backToClues" onClick={this.backToCluesView}>BACK TO CLUES</Button>
           </div>
         </div>
       </div>

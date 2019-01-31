@@ -70,7 +70,7 @@ class EditClue extends React.Component {
     const { clueEdit } = this.state;
 
     return (
-      <div className='newClue mx-auto'>
+      <div className='editClue mx-auto'>
         <div className="clue-form mt-5">
           <form onSubmit={this.formSubmit}>
             <div className="input-group mb-3">
@@ -144,7 +144,7 @@ class EditClue extends React.Component {
               />
             </div>
             <Button className="btn btn-secondary mt-3" onSubmit={this.formSubmit}>
-              Submit Clue Edit
+              SUBMIT CLUE EDIT
             </Button>
           </form>
         </div>

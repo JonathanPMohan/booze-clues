@@ -88,7 +88,7 @@ class Locations extends React.Component {
           searchText=""
           classNames="test-class w-100"
         />
-        <Button className="btn btn-info mt-5" id="addLocation" onClick={this.newLocationView}>Add Location</Button>
+        <Button className="btn btn-secondary mt-5" id="addLocation" onClick={this.newLocationView}>ADD LOCATION</Button>
         <div className="row justify-content-center">{printLocation}</div>
       </div>
     );

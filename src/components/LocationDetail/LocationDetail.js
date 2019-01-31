@@ -26,15 +26,15 @@ class LocationDetail extends React.Component {
     } = this.state;
 
     return (
-      <div className="clueDetail mx-auto">
-        <Button className="btn btn-success mt-5" id="backToLocations" onClick={this.backToLocationsView}>Back To Clues</Button>
-        <div className="card col-6 mt-3 mx-auto">
-          <h5 className="card-header">{singleLocation.name}</h5>
+      <div className="locationDetail mx-auto">
+        <div className="card4 col-6 mt-3 mx-auto">
+          <h1 className="card-header">{singleLocation.name}</h1>
           <div className="card-body">
             <img className="card-img-top" src={singleLocation.imageUrl} alt={singleLocation.name} />
-            <p className="card-text">{singleLocation.address}</p>
-            <p className="card-text">{singleLocation.phoneNumber}</p>
-            <p className="card-text">{singleLocation.website}</p>
+            <h5 className="card-text">{singleLocation.address}</h5>
+            <h3 className="card-text">{singleLocation.phoneNumber}</h3>
+            <h5><a href={singleLocation.website} target="_blank nonopener noreferrer" >Visit Website</a></h5>
+            <Button className="btn btn-light mt-5" id="backToLocations" onClick={this.backToLocationsView}>BACK TO LOCATIONS</Button>
           </div>
         </div>
       </div>

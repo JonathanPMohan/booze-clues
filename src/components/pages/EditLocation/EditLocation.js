@@ -70,7 +70,7 @@ class EditLocation extends React.Component {
     const { locationEdit } = this.state;
 
     return (
-      <div className='newClue mx-auto'>
+      <div className='editLocation mx-auto'>
         <div className="clue-form mt-5">
           <form onSubmit={this.formSubmit}>
             <div className="input-group mb-3">
@@ -144,7 +144,7 @@ class EditLocation extends React.Component {
               />
             </div>
             <Button className="btn btn-secondary mt-3" onSubmit={this.formSubmit}>
-              Submit Location Edit
+              SUBMIT LOCATION EDIT
             </Button>
           </form>
         </div>

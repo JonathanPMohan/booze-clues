@@ -1,11 +1,11 @@
 .card2 {
   background-color: black;
-  font-family: 'Special Elite', cursive;
+  font-family: 'Titillium Web', sans-serif;
   border-radius: 18px;
   border: 4px solid white;
-  // // box-shadow: 4pt 5pt 0pt 0pt rgb(87, 59, 3);
-   background-image: url("./images/clueBKG.png");
-   background-attachment: scroll;
+  box-shadow: 4pt 5pt 0pt 0pt rgb(92, 91, 88);
+  //  background-image: url("./images/clueBKG.png");
+  //  background-attachment: scroll;
   margin: 3%;
   padding: 2%;
 }
@@ -17,6 +17,11 @@
 .card-img-top {
   border-radius: 15px;
   padding: 2%;
-  max-width: 200px;
-  max-height: 200px;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 5%;
+}
+
+.fa-comment-alt {
+  margin-right: 11px;
 }

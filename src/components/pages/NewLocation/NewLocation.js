@@ -3,7 +3,7 @@ import { Button } from 'reactstrap';
 import authRequests from '../../../helpers/data/authRequests';
 import locationsData from '../../../helpers/data/locationsData';
 import './NewLocation.scss';
-import clueBkg from './images/edit_bkg.jpg';
+import clueBkg from './images/rocks.png';
 
 const defaultLocation = {
   name: '',
@@ -61,7 +61,7 @@ class NewLocation extends React.Component {
             <form onSubmit={this.formSubmit}>
               <div className="input-group mb-3">
                 <div className="input-group-prepend">
-                  <span className="input-group-text" id="name-pre">Name</span>
+                  <span className="input-group-text" id="name-pre">NAME</span>
                 </div>
                 <input
                   type="text"
@@ -75,7 +75,7 @@ class NewLocation extends React.Component {
               </div>
               <div className="input-group mb-3">
                 <div className="input-group-prepend">
-                  <span className="input-group-text" id="imageUrl-pre">Image URL</span>
+                  <span className="input-group-text" id="imageUrl-pre">IMAGE URL</span>
                 </div>
                 <input
                   type="text"
@@ -89,7 +89,7 @@ class NewLocation extends React.Component {
               </div>
               <div className="input-group mb-3">
                 <div className="input-group-prepend">
-                  <span className="input-group-text" id="address-pre">Address</span>
+                  <span className="input-group-text" id="address-pre">ADDRESS</span>
                 </div>
                 <input
                   type="text"
@@ -103,7 +103,7 @@ class NewLocation extends React.Component {
               </div>
               <div className="input-group mb-3">
                 <div className="input-group-prepend">
-                  <span className="input-group-text" id="phone-pre">Phone #</span>
+                  <span className="input-group-text" id="phone-pre">PHONE</span>
                 </div>
                 <input
                   type="text"
@@ -117,7 +117,7 @@ class NewLocation extends React.Component {
               </div>
               <div className="input-group mb-3">
                 <div className="input-group-prepend">
-                  <span className="input-group-text" id="website-pre">Website</span>
+                  <span className="input-group-text" id="website-pre">WEBSITE</span>
                 </div>
                 <input
                   type="text"
@@ -132,7 +132,9 @@ class NewLocation extends React.Component {
               <Button className="btn btn-secondary mt-3" onSubmit={this.formSubmit}>
                 Submit New Location
             </Button>
-              <img src={clueBkg} alt="rocks glasses" />
+              <div>
+                <img src={clueBkg} alt="rocks glasses" />
+              </div>
             </form>
           </div>
         </div>

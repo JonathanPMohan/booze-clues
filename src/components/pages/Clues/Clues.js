@@ -86,13 +86,15 @@ class Clues extends React.Component {
     return (
       <div className='clues mx-auto'>
         <h2>Searching For A Clue?</h2>
-        <SearchField
-          placeholder="Search Clues By Name or Style"
-          onChange={this.onChange}
-          searchText=""
-          classNames="clueSearch"
-        />
-        <Button className="btn btn-secondary mt-5" id="addClue" onClick={this.newClueView}>ADD CLUE</Button>
+        <div className='clueWrap'>
+          <SearchField
+            placeholder="Search Clues By Name or Style"
+            onChange={this.onChange}
+            searchText=""
+            classNames="clueSearch"
+          />
+          <Button className="btn btn-secondary mt-5" id="addClue" onClick={this.newClueView}>ADD CLUE</Button>
+        </div>
         <div className="row justify-content-center">{printClue}</div>
       </div>
     );

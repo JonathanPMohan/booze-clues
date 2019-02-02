@@ -75,7 +75,7 @@ class EditLocation extends React.Component {
           <form onSubmit={this.formSubmit}>
             <div className="input-group mb-3">
               <div className="input-group-prepend">
-                <span className="input-group-text" id="name-pre">Name</span>
+                <span className="input-group-text" id="name-pre">NAME</span>
               </div>
               <input
                 type="text"
@@ -89,7 +89,7 @@ class EditLocation extends React.Component {
             </div>
             <div className="input-group mb-3">
               <div className="input-group-prepend">
-                <span className="input-group-text" id="imageUrl-pre">Image URL</span>
+                <span className="input-group-text" id="imageUrl-pre">IMAGE URL</span>
               </div>
               <input
                 type="text"
@@ -103,7 +103,7 @@ class EditLocation extends React.Component {
             </div>
             <div className="input-group mb-3">
               <div className="input-group-prepend">
-                <span className="input-group-text" id="address-pre">Address</span>
+                <span className="input-group-text" id="address-pre">ADDRESS</span>
               </div>
               <input
                 type="text"
@@ -117,7 +117,7 @@ class EditLocation extends React.Component {
             </div>
             <div className="input-group mb-3">
               <div className="input-group-prepend">
-                <span className="input-group-text" id="phone-pre">Phone #</span>
+                <span className="input-group-text" id="phone-pre">PHONE</span>
               </div>
               <input
                 type="text"
@@ -131,7 +131,7 @@ class EditLocation extends React.Component {
             </div>
             <div className="input-group mb-3">
               <div className="input-group-prepend">
-                <span className="input-group-text" id="website-pre">Website</span>
+                <span className="input-group-text" id="website-pre">WEBSITE</span>
               </div>
               <input
                 type="text"

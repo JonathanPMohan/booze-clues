@@ -3,7 +3,7 @@ import { Button } from 'reactstrap';
 import authRequests from '../../../helpers/data/authRequests';
 import cluesData from '../../../helpers/data/cluesData';
 import './NewClue.scss';
-import clueBkg from './images/edit_bkg.jpg';
+import clueBkg from './images/rocks.png';
 
 const defaultClue = {
   name: '',
@@ -61,7 +61,7 @@ class NewClue extends React.Component {
             <form onSubmit={this.formSubmit}>
               <div className="input-group mb-3">
                 <div className="input-group-prepend">
-                  <span className="input-group-text" id="name-pre">Name</span>
+                  <span className="input-group-text" id="name-pre">NAME</span>
                 </div>
                 <input
                   type="text"
@@ -75,7 +75,7 @@ class NewClue extends React.Component {
               </div>
               <div className="input-group mb-3">
                 <div className="input-group-prepend">
-                  <span className="input-group-text" id="imageUrl-pre">Image URL</span>
+                  <span className="input-group-text" id="imageUrl-pre">IMAGE URL</span>
                 </div>
                 <input
                   type="text"
@@ -89,7 +89,7 @@ class NewClue extends React.Component {
               </div>
               <div className="input-group mb-3">
                 <div className="input-group-prepend">
-                  <span className="input-group-text" id="location-pre">Location</span>
+                  <span className="input-group-text" id="location-pre">LOCATION</span>
                 </div>
                 <input
                   type="text"
@@ -103,7 +103,7 @@ class NewClue extends React.Component {
               </div>
               <div className="input-group mb-3">
                 <div className="input-group-prepend">
-                  <span className="input-group-text" id="style-pre">Style</span>
+                  <span className="input-group-text" id="style-pre">STYLE</span>
                 </div>
                 <input
                   type="text"
@@ -117,7 +117,7 @@ class NewClue extends React.Component {
               </div>
               <div className="input-group mb-3">
                 <div className="input-group-prepend">
-                  <span className="input-group-text" id="notes-pre">Notes</span>
+                  <span className="input-group-text" id="notes-pre">NOTES</span>
                 </div>
                 <input
                   type="text"
@@ -129,10 +129,12 @@ class NewClue extends React.Component {
                   onChange={this.notesChange}
                 />
               </div>
-              <Button className="btn btn-secondary mt-3" onSubmit={this.formSubmit}>
+              <Button className="clueSubmit btn btn-secondary mt-3" onSubmit={this.formSubmit}>
                 SUBMIT NEW CLUE
             </Button>
-              <img src={clueBkg} alt="rocks glasses" />
+              <div>
+                <img src={clueBkg} alt="rocks glasses" />
+              </div>
             </form>
           </div>
         </div>

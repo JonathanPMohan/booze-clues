@@ -75,7 +75,7 @@ class EditClue extends React.Component {
           <form onSubmit={this.formSubmit}>
             <div className="input-group mb-3">
               <div className="input-group-prepend">
-                <span className="input-group-text" id="name-pre">Name</span>
+                <span className="input-group-text" id="name-pre">NAME</span>
               </div>
               <input
                 type="text"
@@ -89,7 +89,7 @@ class EditClue extends React.Component {
             </div>
             <div className="input-group mb-3">
               <div className="input-group-prepend">
-                <span className="input-group-text" id="imageUrl-pre">Image URL</span>
+                <span className="input-group-text" id="imageUrl-pre">IMAGE URL</span>
               </div>
               <input
                 type="text"
@@ -103,7 +103,7 @@ class EditClue extends React.Component {
             </div>
             <div className="input-group mb-3">
               <div className="input-group-prepend">
-                <span className="input-group-text" id="location-pre">Location</span>
+                <span className="input-group-text" id="location-pre">LOCATION</span>
               </div>
               <input
                 type="text"
@@ -117,7 +117,7 @@ class EditClue extends React.Component {
             </div>
             <div className="input-group mb-3">
               <div className="input-group-prepend">
-                <span className="input-group-text" id="style-pre">Style</span>
+                <span className="input-group-text" id="style-pre">STYLE</span>
               </div>
               <input
                 type="text"
@@ -131,7 +131,7 @@ class EditClue extends React.Component {
             </div>
             <div className="input-group mb-3">
               <div className="input-group-prepend">
-                <span className="input-group-text" id="notes-pre">Notes</span>
+                <span className="input-group-text" id="notes-pre">NOTES</span>
               </div>
               <input
                 type="text"

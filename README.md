@@ -9,7 +9,9 @@ This is our Front End Capstone project. My app is called Booze Clues. It is a wa
 
 ## Screenshots
 ![Main Screenshot](./images/screenshot1.png)
-![Second Screenshot](./images/screenshot2.png)
+![Clues Screenshot](./images/screenshot2.png)
+![Add Clue Screenshot](./images/screenshot3.png)
+![Locations Screenshot](./images/screenshot4.png)
 
 ## How to run this project:
 

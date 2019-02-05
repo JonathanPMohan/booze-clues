@@ -29,4 +29,4 @@ This is our Front End Capstone project. My app is called Booze Clues. It is a wa
 
 * ```npm start``` will run the project at http://localhost:3000
 
-* Deploy Link: [text](https://https://booze-clues-8b9ca.firebaseapp.com)
+* [Deploy Link](https://https://booze-clues-8b9ca.firebaseapp.com)

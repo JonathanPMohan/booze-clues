@@ -50,6 +50,11 @@ class MyNavbar extends React.Component {
                   </NavLink>
                 </NavItem>
                 <NavItem>
+                  <NavLink tag={RRNavLink} to='/collections'>
+                    <i className="fas fa-trophy fa-3x"></i>
+                  </NavLink>
+                </NavItem>
+                <NavItem>
                   <NavLink tag={RRNavLink} to='/locations'>
                     <i className="fas fa-globe-americas fa-3x"></i>
                   </NavLink>

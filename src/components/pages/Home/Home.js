@@ -18,6 +18,13 @@ class Home extends React.Component {
               <p className="card-text">Find A Clue</p>
             </div>
           </div>
+          <div className="card border-dark" id="collections" onClick={this.changeView}>
+            <div className="card-body text-center">
+              <h4 className="card-title"><i className="fas fa-trophy fa-7x"></i></h4>
+              <h6 className="card-subtitle mb-2 text-muted">COLLECTION</h6>
+              <p className="card-text">Browse Collection</p>
+            </div>
+          </div>
           <div className="card border-dark" id="locations" onClick={this.changeView}>
             <div className="card-body text-center">
               <h4 className="card-title"><i className="fas fa-globe-americas fa-7x"></i></h4>

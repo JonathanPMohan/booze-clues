@@ -16,6 +16,10 @@ import LocationDetail from '../components/LocationDetail/LocationDetail';
 import Locations from '../components/pages/Locations/Locations';
 import NewLocation from '../components/pages/NewLocation/NewLocation';
 import EditLocation from '../components/pages/EditLocation/EditLocation';
+import CollectionDetail from '../components/CollectionDetail/CollectionDetail';
+import Collections from '../components/pages/Collections/Collections';
+import NewCollection from '../components/pages/NewCollection/NewCollection';
+import EditCollection from '../components/pages/EditCollection/EditCollection';
 import MyNavBar from '../components/MyNavBar/MyNavBar';
 import authRequests from '../helpers/data/authRequests';
 import './App.scss';
@@ -95,6 +99,10 @@ class App extends React.Component {
                   <PrivateRoute path='/locations/new' component={NewLocation} authed={this.state.authed} />
                   <PrivateRoute exact path='/locations/:id/' component={LocationDetail} authed={this.state.authed} />
                   <PrivateRoute path='/locations/:id/edit' component={EditLocation} authed={this.state.authed} />
+                  <PrivateRoute exact path='/collections' component={Collections} authed={this.state.authed} />
+                  <PrivateRoute path='/collections/new' component={NewCollection} authed={this.state.authed} />
+                  <PrivateRoute exact path='/collections/:id/' component={CollectionDetail} authed={this.state.authed} />
+                  <PrivateRoute path='/collections/:id/edit' component={EditCollection} authed={this.state.authed} />
                   <PublicRoute path='/auth' component={Auth} authed={this.state.authed} />
                 </Switch>
               </div>

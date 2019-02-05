@@ -1,0 +1,36 @@
+.collections {
+  font-family: 'Titillium Web', sans-serif;
+  margin-top: 3%;
+}
+
+.collectionSearch {
+  width: 50%;
+  margin-left: 20%;
+  border-radius: 12px;
+}
+
+#addCollection {
+margin-top: 0px !important;
+margin-left: 10px;
+}
+
+.collectionWrap {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+
+.react-search-field-input { 
+  border-radius: 5px;
+}
+
+.react-search-field-button { 
+  border-radius: 5px;
+  background-color: white !important;
+  margin-left: 5px;
+}
+
+.react-search-field {
+ border-radius: 15px;
+ border: none !important;
+}

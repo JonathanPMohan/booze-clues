@@ -8,10 +8,10 @@ This is our Front End Capstone project. My app is called Booze Clues. It is a wa
 * Use CRUD to easily add/delete/edit/update Clues/Locations/Collection
 
 ## Screenshots
-![Main Screenshot](./images/screenshot1.png)
-![Clues Screenshot](./images/screenshot2.png)
-![Add Clue Screenshot](./images/screenshot3.png)
-![Locations Screenshot](./images/screenshot4.png)
+![Main Screenshot](./images/screenshot1A.png)
+![Clues Screenshot](./images/screenshot2A.png)
+![Add Clue Screenshot](./images/screenshot3A.png)
+![Locations Screenshot](./images/screenshot4A.png)
 
 ## How to run this project:
 

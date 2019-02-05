@@ -34,42 +34,48 @@ class MyNavbar extends React.Component {
     const buildNavbar = () => {
       if (isAuthed) {
         return (
-          <Nav className='ml-auto' navbar>
-            <NavItem>
-              <NavLink tag={RRNavLink} to='/clues'>
-                <i className="fas fa-glass-whiskey fa-3x"></i>
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink tag={RRNavLink} to='/clues/new'>
-                <i className="fas fa-search-plus fa-3x"></i>
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink tag={RRNavLink} to='/locations'>
-                <i className="fas fa-globe-americas fa-3x"></i>
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink onClick={logoutClickEvent}>
-                <i className="fas fa-sign-out-alt fa-3x"></i>
-              </NavLink>
-            </NavItem>
-          </Nav>
+          <Navbar color="black" dark expand="md">
+            <NavbarBrand href="/"><img src={boozeSmall} alt="small_logo" /></NavbarBrand>
+            <NavbarToggler onClick={e => this.toggle(e)} />
+            <Collapse isOpen={this.state.isOpen} navbar>
+              <Nav className='ml-auto' navbar>
+                <NavItem>
+                  <NavLink tag={RRNavLink} to='/clues'>
+                    <i className="fas fa-glass-whiskey fa-3x"></i>
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink tag={RRNavLink} to='/clues/new'>
+                    <i className="fas fa-search-plus fa-3x"></i>
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink tag={RRNavLink} to='/locations'>
+                    <i className="fas fa-globe-americas fa-3x"></i>
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink onClick={logoutClickEvent}>
+                    <i className="fas fa-sign-out-alt fa-3x"></i>
+                  </NavLink>
+                </NavItem>
+              </Nav>
+            </Collapse>
+          </Navbar>
         );
       }
-      return <Nav className='ml-auto' navbar />;
+      return <div></div>;
     };
 
     return (
       <div className="my-navbar">
-        <Navbar color="dark" dark expand="md">
+        {/* <Navbar color="dark" dark expand="md">
           <NavbarBrand href="/"><img src={boozeSmall} alt="small_logo" /></NavbarBrand>
           <NavbarToggler onClick={e => this.toggle(e)} />
-          <Collapse isOpen={this.state.isOpen} navbar>
-            {buildNavbar()}
-          </Collapse>
-        </Navbar>
+          <Collapse isOpen={this.state.isOpen} navbar> */}
+        {buildNavbar()}
+        {/* </Collapse>
+        </Navbar> */}
       </div>
     );
   }

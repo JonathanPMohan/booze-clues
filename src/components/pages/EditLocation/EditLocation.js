@@ -3,6 +3,7 @@ import { Button } from 'reactstrap';
 import PropTypes from 'prop-types';
 import authRequests from '../../../helpers/data/authRequests';
 import locationsData from '../../../helpers/data/locationsData';
+import clueBkg from './images/rocks.png';
 import './EditLocation.scss';
 
 const defaultLocation = {
@@ -146,6 +147,9 @@ class EditLocation extends React.Component {
             <Button className="btn btn-secondary mt-3" onSubmit={this.formSubmit}>
               SUBMIT LOCATION EDIT
             </Button>
+            <div>
+              <img src={clueBkg} alt="rocks glasses" />
+            </div>
           </form>
         </div>
       </div>

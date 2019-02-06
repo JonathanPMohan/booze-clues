@@ -2,7 +2,9 @@ import React from 'react';
 import { Button } from 'reactstrap';
 import PropTypes from 'prop-types';
 import cluesData from '../../../helpers/data/cluesData';
+import clueBkg from './images/rocks.png';
 import authRequests from '../../../helpers/data/authRequests';
+
 import './EditClue.scss';
 
 const defaultClue = {
@@ -146,6 +148,9 @@ class EditClue extends React.Component {
             <Button className="btn btn-secondary mt-3" onSubmit={this.formSubmit}>
               SUBMIT CLUE EDIT
             </Button>
+            <div>
+              <img src={clueBkg} alt="rocks glasses" />
+            </div>
           </form>
         </div>
       </div>

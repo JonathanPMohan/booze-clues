@@ -3,6 +3,7 @@ import { Button } from 'reactstrap';
 import PropTypes from 'prop-types';
 import collectionsData from '../../../helpers/data/collectionsData';
 import authRequests from '../../../helpers/data/authRequests';
+import clueBkg from './images/rocks.png';
 import './EditCollection.scss';
 
 const defaultCollection = {
@@ -129,6 +130,9 @@ class EditCollection extends React.Component {
             <Button className="btn btn-secondary mt-3" onSubmit={this.formSubmit}>
               SUBMIT ITEM EDIT
             </Button>
+            <div>
+              <img src={clueBkg} alt="rocks glasses" />
+            </div>
           </form>
         </div>
       </div>

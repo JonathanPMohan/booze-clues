@@ -80,7 +80,7 @@ class Locations extends React.Component {
     ));
 
     return (
-      <div className='locations mx-auto'>
+      <div className='locations mx-auto animated bounceInLeft'>
         <h2>Searching For A Location?</h2>
         <SearchField
           placeholder="Search Locations By Name or Address"

@@ -1,5 +1,4 @@
 import React from 'react';
-import { Button } from 'reactstrap';
 import authRequests from '../../../helpers/data/authRequests';
 import locationsData from '../../../helpers/data/locationsData';
 import './NewLocation.scss';
@@ -129,12 +128,15 @@ class NewLocation extends React.Component {
                   onChange={this.websiteChange}
                 />
               </div>
-              <Button className="btn btn-secondary mt-3" onSubmit={this.formSubmit}>
-                Submit New Location
-            </Button>
-              <div>
-                <img src={clueBkg} alt="rocks glasses" />
+              <div className="svg-wrapper" onClick={this.formSubmit}>
+                <svg height="60" width="150" xmlns="http://www.w3.org/2000/svg">
+                  <rect id="shape" height="30" width="150" />
+                </svg>
+                <div id="text">
+                  <span className="spot">SUBMIT LOCATION</span>
+                </div>
               </div>
+              <img src={clueBkg} alt="rocks glasses" />
             </form>
           </div>
         </div>

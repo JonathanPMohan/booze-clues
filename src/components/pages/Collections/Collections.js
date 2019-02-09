@@ -84,7 +84,7 @@ class Collections extends React.Component {
     ));
 
     return (
-      <div className='collections mx-auto'>
+      <div className='collections mx-auto animated bounceInLeft'>
         <h2>Search Your Collection</h2>
         <div className='collectionWrap'>
           <SearchField

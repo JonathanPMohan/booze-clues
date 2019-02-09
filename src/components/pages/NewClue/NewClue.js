@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from 'reactstrap';
+// import { Button } from 'reactstrap';
 import authRequests from '../../../helpers/data/authRequests';
 import cluesData from '../../../helpers/data/cluesData';
 import './NewClue.scss';
@@ -129,12 +129,15 @@ class NewClue extends React.Component {
                   onChange={this.notesChange}
                 />
               </div>
-              <Button className="clueSubmit btn btn-secondary mt-3" onSubmit={this.formSubmit}>
-                SUBMIT NEW CLUE
-            </Button>
-              <div>
-                <img src={clueBkg} alt="rocks glasses" />
+              <div className="svg-wrapper" onClick={this.formSubmit}>
+                <svg height="60" width="150" xmlns="http://www.w3.org/2000/svg">
+                  <rect id="shape" height="30" width="150" />
+                </svg>
+                <div id="text">
+                  <span className="spot">SUBMIT CLUE</span>
+                </div>
               </div>
+              <img src={clueBkg} alt="rocks glasses" />
             </form>
           </div>
         </div>

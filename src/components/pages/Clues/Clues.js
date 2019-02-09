@@ -84,7 +84,7 @@ class Clues extends React.Component {
     ));
 
     return (
-      <div className='clues mx-auto'>
+      <div className='clues mx-auto animated bounceInLeft'>
         <h2>Searching For A Clue?</h2>
         <div className='clueWrap'>
           <SearchField

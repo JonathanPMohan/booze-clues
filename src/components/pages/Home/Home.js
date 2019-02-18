@@ -13,6 +13,7 @@ class Home extends React.Component {
   render() {
     return (
       <div className='home mx-auto animated bounceInLeft'>
+        <h2>Find A Clue, Location, or Browse Your Collection</h2>
         <div className="deck card-deck mt-5">
           <div className="card border-dark" id="clues" onClick={this.changeView}>
             <div className="card-body text-center">

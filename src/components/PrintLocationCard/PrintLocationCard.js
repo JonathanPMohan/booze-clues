@@ -37,13 +37,13 @@ class PrintLocationCard extends React.Component {
         return (
           <div>
             <span className="col-1">
-              <button className="btn btn-secondary" onClick={this.editEvent}>
+              <button className="pencil" onClick={this.editEvent}>
                 <i className="fas fa-pencil-alt"></i>
               </button>
             </span>
-            <span className="col-1">
-              <button className="btn btn-secondary" onClick={this.deleteEvent}>
-                <i className="fas fa-trash-alt"></i>
+            <span className="col">
+              <button className="trash" onClick={this.deleteEvent}>
+                <i class="fas fa-trash"></i>
               </button>
             </span>
           </div>
@@ -55,11 +55,11 @@ class PrintLocationCard extends React.Component {
       <div className="card3 col-4">
         <h2 className="card-header">{location.name}</h2>
         <div className="card-body" onClick={this.locationClick}>
-          <img className="card-img-top" src={location.imageUrl} alt={location.name} />
+          <img className="loc card-img-top" src={location.imageUrl} alt={location.name} />
           <h4 className="card-text" >{location.address}</h4>
           <h5 className="card-text"><i class="fas fa-phone"></i>
             {location.phoneNumber}</h5>
-          <h5><i class="fas fa-globe-americas"></i>
+          <h5><i className="fas fa-globe-americas"></i>
             <a href={location.website} target="_blank nonopener noreferrer" >Visit Website</a></h5>
         </div>
         {makeButtons()}

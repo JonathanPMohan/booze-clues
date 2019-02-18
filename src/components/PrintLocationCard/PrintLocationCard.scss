@@ -19,7 +19,7 @@
   border-radius: 15px;
   padding: 2%;
   width: 200px;
-  height: 200px;
+  height: 300px;
   margin-bottom: 5%;
   box-shadow: 3pt 4pt 0pt 0pt rgb(90, 42, 3);
   background-color: black;
@@ -31,4 +31,19 @@
 
 .fa-phone {
   padding-right: 6px;
+}
+
+.card-img-top {
+  border-radius: 15px;
+  padding: 2%;
+  width: 200px;
+  height: 300px;
+  margin-bottom: 5%;
+  box-shadow: 3pt 4pt 0pt 0pt black;
+  border: 2px solid rgb(181, 181, 181);
+}
+
+.trash,
+.pencil {
+  border-radius: 15px;
 }

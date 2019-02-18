@@ -1,6 +1,7 @@
 .collections {
   font-family: 'Titillium Web', sans-serif;
   margin-top: 3%;
+  text-shadow: 2px 2px #000000;
 }
 
 .collectionSearch {
@@ -33,4 +34,14 @@ margin-left: 10px;
 .react-search-field {
  border-radius: 15px;
  border: none !important;
+}
+
+.addCollectionBtn {
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+}
+
+.fa-plus-square {
+  padding-right: 5px;
 }

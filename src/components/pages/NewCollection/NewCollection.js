@@ -52,7 +52,7 @@ class NewCollection extends React.Component {
     const { newCollection } = this.state;
 
     return (
-      <div className='newCollectionPage mx-auto'>
+      <div className='newCollectionPage mx-auto animated bounceInLeft'>
         <div className='newCollection mx-auto'>
           <div className="collection-form mt-5">
             <form onSubmit={this.formSubmit}>

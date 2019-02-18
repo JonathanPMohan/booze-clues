@@ -67,7 +67,7 @@ class EditCollection extends React.Component {
     const { collectionEdit } = this.state;
 
     return (
-      <div className='editCollection mx-auto'>
+      <div className='editCollection mx-auto animated bounceInLeft'>
         <div className="collection-form mt-5">
           <form onSubmit={this.formSubmit}>
             <div className="input-group mb-3">

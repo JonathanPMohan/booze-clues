@@ -70,7 +70,7 @@ class EditLocation extends React.Component {
     const { locationEdit } = this.state;
 
     return (
-      <div className='editLocation mx-auto'>
+      <div className='editLocation mx-auto animated bounceInLeft'>
         <div className="clue-form mt-5">
           <form onSubmit={this.formSubmit}>
             <div className="input-group mb-3">

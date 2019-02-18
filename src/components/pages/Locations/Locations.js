@@ -1,5 +1,4 @@
 import React from 'react';
-import { Button } from 'reactstrap';
 import SearchField from 'react-search-field';
 import locationsData from '../../../helpers/data/locationsData';
 import authRequests from '../../../helpers/data/authRequests';
@@ -80,7 +79,7 @@ class Locations extends React.Component {
     ));
 
     return (
-      <div className='locations mx-auto animated bounceInLeft'>
+      <div className='locations mx-auto animated bounceInLeft w-100'>
         <h2>Searching For A Location?</h2>
         <SearchField
           placeholder="Search Locations By Name or Address"
@@ -88,7 +87,7 @@ class Locations extends React.Component {
           searchText=""
           classNames="locSearch"
         />
-        <Button className="btn btn-secondary mt-5" id="addLocation" onClick={this.newLocationView}>ADD LOCATION</Button>
+        <button className="addLocationBtn" id="addLocation" onClick={this.newLocationView}><i class="far fa-plus-square"></i>ADD LOCATION</button>
         <div className="row justify-content-center">{printLocation}</div>
       </div>
     );

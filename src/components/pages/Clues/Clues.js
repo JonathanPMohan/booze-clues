@@ -1,5 +1,4 @@
 import React from 'react';
-import { Button } from 'reactstrap';
 import SearchField from 'react-search-field';
 import cluesData from '../../../helpers/data/cluesData';
 import authRequests from '../../../helpers/data/authRequests';
@@ -84,7 +83,7 @@ class Clues extends React.Component {
     ));
 
     return (
-      <div className='clues mx-auto animated bounceInLeft'>
+      <div className='clues mx-auto animated bounceInLeft w-100'>
         <h2>Searching For A Clue?</h2>
         <div className='clueWrap'>
           <SearchField
@@ -93,7 +92,7 @@ class Clues extends React.Component {
             searchText=""
             classNames="clueSearch"
           />
-          <Button className="btn btn-secondary mt-5" id="addClue" onClick={this.newClueView}>ADD CLUE</Button>
+          <button className="addClueBtn" id="addClue" onClick={this.newClueView}><i class="far fa-plus-square"></i>ADD CLUE</button>
         </div>
         <div className="row justify-content-center">{printClue}</div>
       </div>

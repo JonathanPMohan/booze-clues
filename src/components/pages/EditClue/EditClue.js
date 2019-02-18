@@ -71,7 +71,7 @@ class EditClue extends React.Component {
     const { clueEdit } = this.state;
 
     return (
-      <div className='editClue mx-auto'>
+      <div className='editClue mx-auto animated bounceInLeft'>
         <div className="clue-form mt-5">
           <form onSubmit={this.formSubmit}>
             <div className="input-group mb-3">

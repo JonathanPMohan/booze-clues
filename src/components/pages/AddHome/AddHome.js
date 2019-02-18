@@ -2,7 +2,7 @@ import React from 'react';
 import clueBkg from './images/rocks.png';
 import trophy from './images/trophy.png';
 import earth from './images/earth.png';
-import './Home.scss';
+import './AddHome.scss';
 
 class Home extends React.Component {
   changeView = (e) => {
@@ -12,8 +12,7 @@ class Home extends React.Component {
 
   render() {
     return (
-      <div className='home mx-auto animated bounceInLeft'>
-        <h2>Find A Clue, Location, or Browse Your Collection</h2>
+      <div className='home mx-auto'>
         <div className="deck card-deck mt-5">
           <div className="card border-dark" id="clues" onClick={this.changeView}>
             <div className="card-body text-center">

@@ -1,5 +1,4 @@
 import React from 'react';
-import { Button } from 'reactstrap';
 import SearchField from 'react-search-field';
 import collectionsData from '../../../helpers/data/collectionsData';
 import authRequests from '../../../helpers/data/authRequests';
@@ -84,7 +83,7 @@ class Collections extends React.Component {
     ));
 
     return (
-      <div className='collections mx-auto animated bounceInLeft'>
+      <div className='collections mx-auto animated bounceInLeft w-100'>
         <h2>Search Your Collection</h2>
         <div className='collectionWrap'>
           <SearchField
@@ -93,7 +92,7 @@ class Collections extends React.Component {
             searchText=""
             classNames="collectionSearch"
           />
-          <Button className="btn btn-secondary mt-5" id="addCollection" onClick={this.newCollectionView}>ADD ITEM</Button>
+          <button className="addCollectionBtn" id="addCollection" onClick={this.newCollectionView}><i class="far fa-plus-square"></i>ADD ITEM</button>
         </div>
         <div className="row justify-content-center">{printCollection}</div>
       </div>

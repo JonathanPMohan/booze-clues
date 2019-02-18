@@ -37,13 +37,13 @@ class PrintCollectionCard extends React.Component {
         return (
           <div>
             <span className="col">
-              <button className="btn btn-secondary" onClick={this.editEvent}>
+              <button className="pencil" onClick={this.editEvent}>
                 <i className="fas fa-pencil-alt"></i>
               </button>
             </span>
             <span className="col">
-              <button className="btn btn-secondary" onClick={this.deleteEvent}>
-                <i className="fas fa-trash-alt"></i>
+              <button className="trash" onClick={this.deleteEvent}>
+                <i class="fas fa-trash"></i>
               </button>
             </span>
           </div>

@@ -84,7 +84,7 @@ class Collections extends React.Component {
 
     return (
       <div className='collections mx-auto animated bounceInLeft w-100'>
-        <h2>Search Your Collection</h2>
+        <h2>SEARCH YOUR COLLECTION</h2>
         <div className='collectionWrap'>
           <SearchField
             placeholder="Search Collection By Name or Style"

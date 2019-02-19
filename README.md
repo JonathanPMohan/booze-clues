@@ -22,8 +22,8 @@ As an added feature for all the bourbon collectors out there, I built a section 
 ![Home Screenshot](./images/Screenshot2A.png)
 ![Clues Screenshot](./images/Screenshot3A.png)
 ![Add Clues Screenshot](./images/Screenshot4A.png)
-![Locations Screenshot](./images/Screenshot5A.png)
-![Collection Screenshot](./images/Screenshot6A.png)
+![Locations Screenshot](./images/Screenshot6A.png)
+![Collection Screenshot](./images/Screenshot5A.png)
 
 ## How to run this project:
 

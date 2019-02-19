@@ -72,7 +72,7 @@ class EditClue extends React.Component {
 
     return (
       <div className='editClue mx-auto animated bounceInLeft'>
-        <h2>Edit Your Booze Clue</h2>
+        <h2>EDIT YOUR BOOZE CLUE</h2>
         <div className="clue-form mt-5">
           <form onSubmit={this.formSubmit}>
             <div className="input-group mb-3">

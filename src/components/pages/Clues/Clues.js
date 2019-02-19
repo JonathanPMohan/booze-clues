@@ -84,7 +84,7 @@ class Clues extends React.Component {
 
     return (
       <div className='clues mx-auto animated bounceInLeft w-100'>
-        <h2>Searching For A Clue?</h2>
+        <h2>SEARCH FOR A CLUE</h2>
         <div className='clueWrap'>
           <SearchField
             placeholder="Search Clues By Name or Style"

@@ -55,6 +55,7 @@ class NewLocation extends React.Component {
 
     return (
       <div className='newLocationPage mx-auto animated bounceInLeft'>
+        <h2>Add A New Location</h2>
         <div className='newClue mx-auto'>
           <div className="clue-form mt-5">
             <form onSubmit={this.formSubmit}>

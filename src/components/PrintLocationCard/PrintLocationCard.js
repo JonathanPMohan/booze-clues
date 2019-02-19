@@ -55,7 +55,7 @@ class PrintLocationCard extends React.Component {
       <div className="card3 col-4">
         <h2 className="card-header">{location.name}</h2>
         <div className="card-body" onClick={this.locationClick}>
-          <img className="loc card-img-top" src={location.imageUrl} alt={location.name} />
+          <img className="loc" src={location.imageUrl} alt={location.name} />
           <h4 className="card-text" >{location.address}</h4>
           <h5 className="card-text"><i class="fas fa-phone"></i>
             {location.phoneNumber}</h5>

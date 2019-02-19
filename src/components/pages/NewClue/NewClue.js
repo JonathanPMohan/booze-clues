@@ -56,6 +56,7 @@ class NewClue extends React.Component {
 
     return (
       <div className='newCluePage mx-auto animated bounceInLeft'>
+        <h2>Add A Booze Clue</h2>
         <div className='newClue mx-auto'>
           <div className="clue-form mt-5">
             <form onSubmit={this.formSubmit}>

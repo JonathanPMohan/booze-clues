@@ -68,6 +68,7 @@ class EditCollection extends React.Component {
 
     return (
       <div className='editCollection mx-auto animated bounceInLeft'>
+        <h2>Edit Collection Item</h2>
         <div className="collection-form mt-5">
           <form onSubmit={this.formSubmit}>
             <div className="input-group mb-3">

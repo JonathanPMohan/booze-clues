@@ -55,7 +55,7 @@ class PrintClueCard extends React.Component {
       <div className="card2 col-3">
         <h3 className="card-header">{clue.name}</h3>
         <div className="card-body" onClick={this.clueClick}>
-          <img className="card-img-top" src={clue.imageUrl} alt={clue.name} />
+          <img className="clueImage" src={clue.imageUrl} alt={clue.name} />
           <h4 className="card-text">{clue.location}</h4>
           <h5 className="card-text">{clue.style}</h5>
           <h6 className="card-text"><i className="fas fa-comment-alt"></i>

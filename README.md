@@ -18,12 +18,12 @@ As an added feature for all the bourbon collectors out there, I built a section 
 * [BoozeClues](https://booze-clues-8b9ca.firebaseapp.com)
 
 ## Screenshots
-![Main Screenshot](./images/Screenshot1A.png)
-![Home Screenshot](./images/Screenshot2A.png)
-![Clues Screenshot](./images/Screenshot3A.png)
-![Add Clues Screenshot](./images/Screenshot4A.png)
-![Locations Screenshot](./images/Screenshot6A.png)
-![Collection Screenshot](./images/Screenshot5A.png)
+![Main Screenshot](https://raw.githubusercontent.com/JonathanPMohan/booze-clues/master/images/screenshotA.png)
+![Home Screenshot](./images/screenshotB.png)
+![Clues Screenshot](./images/screenshotC.png)
+![Add Clues Screenshot](./images/screenshotD.png)
+![Locations Screenshot](./images/screenshotE.png)
+![Collection Screenshot](./images/screenshotF.png)
 
 ## How to run this project:
 

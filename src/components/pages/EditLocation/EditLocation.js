@@ -71,6 +71,7 @@ class EditLocation extends React.Component {
 
     return (
       <div className='editLocation mx-auto animated bounceInLeft'>
+        <h2>Edit Your Location</h2>
         <div className="clue-form mt-5">
           <form onSubmit={this.formSubmit}>
             <div className="input-group mb-3">

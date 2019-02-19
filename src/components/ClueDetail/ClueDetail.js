@@ -29,7 +29,7 @@ class ClueDetail extends React.Component {
         <div className="col-9 mt-3 mx-auto">
           <h1 className="card-header">{singleClue.name}</h1>
           <div className="card-body">
-            <img className="clueImage" src={singleClue.imageUrl} alt={singleClue.name} />
+            <img className="clueImage2" src={singleClue.imageUrl} alt={singleClue.name} />
             <h2 className="card-text">{singleClue.location}</h2>
             <h2 className="card-text">{singleClue.style}</h2>
             <h3 className="card-text">{singleClue.notes}</h3>

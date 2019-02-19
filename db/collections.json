@@ -2,43 +2,43 @@
   "collection1": {
     "name": "Pappy Van Winkle",
     "imageUrl": "http://www.oldripvanwinkle.com/app/uploads/2016/09/bourbon-bg-12year-1.jpg",
-    "style": "bourbon",
+    "style": "Bourbon",
     "age": "12 years",
     "uid": "pkbFn03ieFNSBPRIB7OItIa3MMH3"
   },
   "collection2": {
-    "name": "Pappy Van Winkle",
-    "imageUrl": "http://www.oldripvanwinkle.com/app/uploads/2016/09/bourbon-bg-12year-1.jpg",
-    "style": "bourbon",
-    "age": "12 years",
+    "name": "Thomas Handy",
+    "imageUrl": "http://flightclubict.com/wp-content/uploads/2017/11/IMG_7514-768x1024.jpg",
+    "style": "Bourbon",
+    "age": "15 years",
     "uid": "pkbFn03ieFNSBPRIB7OItIa3MMH3"
   },
   "collection3": {
     "name": "Pappy Van Winkle",
-    "imageUrl": "http://www.oldripvanwinkle.com/app/uploads/2016/09/bourbon-bg-12year-1.jpg",
-    "style": "bourbon",
-    "age": "12 years",
+    "imageUrl": "https://assets.catawiki.nl/assets/2017/2/3/8/b/6/8b6f4cb6-ea16-11e6-8d7e-603253d53351.jpg",
+    "style": "Bourbon",
+    "age": "23 years",
     "uid": "pkbFn03ieFNSBPRIB7OItIa3MMH3"
   },
   "collection4": {
-    "name": "Pappy Van Winkle",
-    "imageUrl": "http://www.oldripvanwinkle.com/app/uploads/2016/09/bourbon-bg-12year-1.jpg",
-    "style": "bourbon",
-    "age": "12 years",
+    "name": "Willet 80th Ann.",
+    "imageUrl": "https://cdn11.bigcommerce.com/s-e6b77/images/stencil/1280x1280/products/23594/23271/willett-family-estate-80th-anniversary-kentucky-straight-bourbon-whiskey__73992.1515388468.jpg?c=2",
+    "style": "Bourbon",
+    "age": "4 years",
     "uid": "pkbFn03ieFNSBPRIB7OItIa3MMH3"
   },
   "collection5": {
-    "name": "Pappy Van Winkle",
-    "imageUrl": "http://www.oldripvanwinkle.com/app/uploads/2016/09/bourbon-bg-12year-1.jpg",
-    "style": "bourbon",
-    "age": "12 years",
+    "name": "Eagle Rare",
+    "imageUrl": "https://vanwinkleforsale.files.wordpress.com/2016/05/eagle-rare-17-year-old-buy-online.jpg",
+    "style": "Bourbon",
+    "age": "17 years",
     "uid": "pkbFn03ieFNSBPRIB7OItIa3MMH3"
   },
   "collection6": {
-    "name": "Pappy Van Winkle",
-    "imageUrl": "http://www.oldripvanwinkle.com/app/uploads/2016/09/bourbon-bg-12year-1.jpg",
-    "style": "bourbon",
-    "age": "12 years",
+    "name": "Jefferson's Ocean",
+    "imageUrl": "https://www.powerandmotoryacht.com/.image/t_share/MTUwMTAyOTUzOTE5NTg4MTIy/jeffersons-ocean-aged-at-sea-bourbon-whiskey.jpg",
+    "style": "Bourbon",
+    "age": "Small Batch",
     "uid": "pkbFn03ieFNSBPRIB7OItIa3MMH3"
   }
 }

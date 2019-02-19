@@ -4,7 +4,6 @@ import 'firebase/auth';
 import {
   BrowserRouter, Route, Redirect, Switch,
 } from 'react-router-dom';
-// import { Button } from 'reactstrap';
 import connection from '../helpers/data/connection';
 import Auth from '../components/pages/Auth/Auth';
 import Home from '../components/pages/Home/Home';

@@ -34,39 +34,41 @@ class MyNavbar extends React.Component {
     const buildNavbar = () => {
       if (isAuthed) {
         return (
-          <Navbar color="black" dark expand="md">
-            <NavbarBrand href="/"><img src={boozeSmall} alt="small_logo" /></NavbarBrand>
-            <NavbarToggler onClick={e => this.toggle(e)} />
-            <Collapse isOpen={this.state.isOpen} navbar>
-              <Nav className='ml-auto' navbar>
-                <NavItem>
-                  <NavLink tag={RRNavLink} to='/clues'>
-                    <i className="fas fa-glass-whiskey fa-3x"></i>
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink tag={RRNavLink} to='/clues/new'>
-                    <i className="fas fa-search-plus fa-3x"></i>
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink tag={RRNavLink} to='/collections'>
-                    <i className="fas fa-trophy fa-3x"></i>
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink tag={RRNavLink} to='/locations'>
-                    <i className="fas fa-globe-americas fa-3x"></i>
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink onClick={logoutClickEvent}>
-                    <i className="fas fa-sign-out-alt fa-3x"></i>
-                  </NavLink>
-                </NavItem>
-              </Nav>
-            </Collapse>
-          </Navbar>
+          <div className="navBar">
+            <Navbar color="black" dark expand="md">
+              <NavbarBrand href="/"><img src={boozeSmall} alt="small_logo" /></NavbarBrand>
+              <NavbarToggler onClick={e => this.toggle(e)} />
+              <Collapse isOpen={this.state.isOpen} navbar>
+                <Nav className='ml-auto' navbar>
+                  <NavItem className="nav-item">
+                    <NavLink tag={RRNavLink} to='/clues'>
+                      <i className="fas fa-glass-whiskey fa-2x"></i>
+                    </NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink tag={RRNavLink} to='/clues/new'>
+                      <i className="fas fa-search-plus fa-2x"></i>
+                    </NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink tag={RRNavLink} to='/collections'>
+                      <i className="fas fa-trophy fa-2x"></i>
+                    </NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink tag={RRNavLink} to='/locations'>
+                      <i className="fas fa-globe-americas fa-2x"></i>
+                    </NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink onClick={logoutClickEvent}>
+                      <i className="fas fa-sign-out-alt fa-2x"></i>
+                    </NavLink>
+                  </NavItem>
+                </Nav>
+              </Collapse>
+            </Navbar>
+          </div>
         );
       }
       return <div></div>;

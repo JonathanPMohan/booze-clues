@@ -18,12 +18,12 @@ As an added feature for all the bourbon collectors out there, I built a section 
 * [BoozeClues](https://booze-clues-8b9ca.firebaseapp.com)
 
 ## Screenshots
-![Main Screenshot](./images/screenshot1A.png)
-![Home Screenshot](./images/screenshot2A.png)
-![Clues Screenshot](./images/screenshot3A.png)
-![Add Clues Screenshot](./images/screenshot4A.png)
-![Locations Screenshot](./images/screenshot5A.png)
-![Collection Screenshot](./images/screenshot6A.png)
+![Main Screenshot](./images/Screenshot1A.png)
+![Home Screenshot](./images/Screenshot2A.png)
+![Clues Screenshot](./images/Screenshot3A.png)
+![Add Clues Screenshot](./images/Screenshot4A.png)
+![Locations Screenshot](./images/Screenshot5A.png)
+![Collection Screenshot](./images/Screenshot6A.png)
 
 ## How to run this project:
 
@@ -46,4 +46,4 @@ As an added feature for all the bourbon collectors out there, I built a section 
 * Callan Morrison (NSS E8 Front End Assistant Instructor)
 * Lauren Rouse (NSS E8 Front End Assistant Instructor)
 * Adam Wieckert (NSS E8 Front End Assistant Instructor)
-* Shane Wilson (Fellow NSS E8 Friend/Mentor) 
+* Shane Wilson (Fellow NSS E8 Friend) 

@@ -19,11 +19,11 @@ As an added feature for all the bourbon collectors out there, I built a section 
 
 ## Screenshots
 ![Main Screenshot](https://raw.githubusercontent.com/JonathanPMohan/booze-clues/master/images/screenshotA.png)
-![Home Screenshot](./images/screenshotB.png)
-![Clues Screenshot](./images/screenshotC.png)
-![Add Clues Screenshot](./images/screenshotD.png)
-![Locations Screenshot](./images/screenshotE.png)
-![Collection Screenshot](./images/screenshotF.png)
+![Home Screenshot](https://raw.githubusercontent.com/JonathanPMohan/booze-clues/master/images/screenshotB.png)
+![Clues Screenshot](https://raw.githubusercontent.com/JonathanPMohan/booze-clues/master/images/screenshotC.png)
+![Add Clues Screenshot](https://raw.githubusercontent.com/JonathanPMohan/booze-clues/master/images/screenshotD.png)
+![Locations Screenshot](https://raw.githubusercontent.com/JonathanPMohan/booze-clues/master/images/screenshotE.png)
+![Collection Screenshot](https://raw.githubusercontent.com/JonathanPMohan/booze-clues/master/images/screenshotF.png)
 
 ## How to run this project:
 
